@@ -10,7 +10,7 @@ const typeDefs = gql`
     myFavoriteArtists: [Artist]
   }
   type Artist @cacheControl(maxAge: 60) {
-    id: ID
+    id: String
     name: String
     relatedArtists: [RelatedArtist]
 	
